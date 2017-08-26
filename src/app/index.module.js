@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('stratpointWeb', ['ngAnimate', 'ngMessages', 'ngAria', 'ngResource', 'ngRoute', 'ngMaterial', 'md.data.table', 'toastr']);
+    .module('stratpointWeb', ['ngAnimate', 'ngMessages', 'ngAria', 'ngResource', 'ngRoute', 'ngMaterial', 'md.data.table']);
 
 })();
