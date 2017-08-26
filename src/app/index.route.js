@@ -8,9 +8,14 @@
   function routeConfig($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        templateUrl: 'app/profile/profiles.html',
+        controller: 'ProfileController',
+        controllerAs: 'profile'
+      })
+      .when('/profile/:id', {
+        templateUrl: 'app/profile/profile.html',
+        controller: 'ProfileController',
+        controllerAs: 'profile'
       })
       .otherwise({
         redirectTo: '/'
