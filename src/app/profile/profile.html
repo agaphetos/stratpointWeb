@@ -1,0 +1,51 @@
+<div class="wrapper">
+    <md-content>
+        <md-button class="md-button"
+            ng-href="#/" 
+            aria-label="Home">
+            <md-icon class="material-icons">arrow_back</md-icon> Back to Home
+        </md-button>
+        <md-card>
+            <md-content class="md-no-momentum" layout="column" layout-padding>
+                <md-card-title layout-padding>
+                    <img ng-src="{{profile.profile.picture}}" class="img" />
+                    <md-card-title-text>
+                        <span class="md-headline">
+                            {{profile.profile.name.first}} {{profile.profile.name.middle}} {{profile.profile.name.last}}
+                        </span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <div layout="row">
+                        <p class="md-body-1 label">ID</p>
+                        <p class="md-body-2" layout-fill>{{profile.profile.id}}</p>
+                    </div>
+                    <div layout="row">
+                        <p class="md-body-1 label">Profile</p>
+                        <p class="md-body-2" layout-fill>{{profile.profile.profile}}</p>
+                    </div>
+                    <div layout="row">
+                        <p class="md-body-1 label">Email</p>
+                        <p class="md-body-2" layout-fill>{{profile.profile.email}}</p>
+                    </div>
+                    <div layout="row">
+                        <p class="md-body-1 label">Phone</p>
+                        <p class="md-body-2" layout-fill>{{profile.profile.phone}}</p>
+                    </div>
+                    <div layout="row">
+                        <p class="md-body-1 label">Address</p>
+                        <p class="md-body-2" layout-fill>{{profile.profile.address}}</p>
+                    </div>
+                    <div layout="row">
+                        <p class="md-body-1 label">Age</p>
+                        <p class="md-body-2" layout-fill>{{profile.profile.age}}</p>
+                    </div>
+                    <div layout="row">
+                        <p class="md-body-1 label">Balance</p>
+                        <p class="md-body-2" layout-fill>{{profile.profile.balance}}</p>
+                    </div>
+                </md-card-content>
+            </md-content>
+        </md-card>
+    </md-content>
+</div>
